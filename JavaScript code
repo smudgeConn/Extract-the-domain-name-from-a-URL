@@ -1,0 +1,9 @@
+function domainName(url){
+  url = url.replace('http://', '')
+  url = url.replace('https://', '')
+  url = url.replace('.com', '')
+  url = url.replace('www.', '')
+  url = url.split('.')[0]
+  url = url.split('/')
+  return url[0]
+}
